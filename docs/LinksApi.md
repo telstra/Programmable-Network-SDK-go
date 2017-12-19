@@ -4,14 +4,14 @@ All URIs are relative to *https://penapi.pacnetconnect.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateLinkAndInitialContract**](LinksApi.md#CreateLinkAndInitialContract) | **Post** /1.0.0/inventory/link | Create Link and initial Contract
-[**GetActiveLinks**](LinksApi.md#GetActiveLinks) | **Get** /1.0.0/inventory/links/customer/{customeruuid} | Get active Links
-[**GetDetailsOfSpecifiedLink**](LinksApi.md#GetDetailsOfSpecifiedLink) | **Get** /1.0.0/inventory/links/{linkid} | Get details of specified link
-[**GetLinkHistory**](LinksApi.md#GetLinkHistory) | **Get** /1.0.0/inventory/links/history/{linkid} | Get Link history
+[**100InventoryLinkPost**](LinksApi.md#100InventoryLinkPost) | **Post** /1.0.0/inventory/link | Create Link and initial Contract
+[**100InventoryLinksByLinkidGet**](LinksApi.md#100InventoryLinksByLinkidGet) | **Get** /1.0.0/inventory/links/{linkid} | Get details of specified link
+[**100InventoryLinksCustomerByCustomeruuidGet**](LinksApi.md#100InventoryLinksCustomerByCustomeruuidGet) | **Get** /1.0.0/inventory/links/customer/{customeruuid} | Get active Links
+[**100InventoryLinksHistoryByLinkidGet**](LinksApi.md#100InventoryLinksHistoryByLinkidGet) | **Get** /1.0.0/inventory/links/history/{linkid} | Get Link history
 
 
-# **CreateLinkAndInitialContract**
-> Model100InventoryLinkResponse CreateLinkAndInitialContract($body)
+# **100InventoryLinkPost**
+> Model100InventoryLinkResponse 100InventoryLinkPost($body)
 
 Create Link and initial Contract
 
@@ -30,7 +30,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 
@@ -39,37 +39,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **GetActiveLinks**
-> []Link GetActiveLinks($customeruuid)
-
-Get active Links
-
-Get active Links
-
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customeruuid** | **string**| Unique identifier representing a specific customer | 
-
-### Return type
-
-[**[]Link**](Link.md)
-
-### Authorization
-
-[auth](../README.md#auth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **GetDetailsOfSpecifiedLink**
-> Model100InventoryLinksResponse GetDetailsOfSpecifiedLink($linkid)
+# **100InventoryLinksByLinkidGet**
+> Model100InventoryLinksResponse 100InventoryLinksByLinkidGet($linkid)
 
 Get details of specified link
 
@@ -88,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 
@@ -97,8 +68,37 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **GetLinkHistory**
-> Model100InventoryLinksHistoryResponse GetLinkHistory($linkid)
+# **100InventoryLinksCustomerByCustomeruuidGet**
+> []Link 100InventoryLinksCustomerByCustomeruuidGet($customeruuid)
+
+Get active Links
+
+Get active Links
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customeruuid** | **string**| Unique identifier representing a specific customer | 
+
+### Return type
+
+[**[]Link**](Link.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **100InventoryLinksHistoryByLinkidGet**
+> Model100InventoryLinksHistoryResponse 100InventoryLinksHistoryByLinkidGet($linkid)
 
 Get Link history
 
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 

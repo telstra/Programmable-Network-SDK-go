@@ -13,8 +13,8 @@ Name | Type | Description | Notes
 **CurrencyCode** | **string** |  | [optional] [default to null]
 **CurrencyID** | **string** |  | [optional] [default to null]
 **RenewalOption** | **int32** | Renewal Option: 0&#x3D;Auto Disconnect, 1&#x3D;Auto Renew, 2&#x3D;Pay per hour | [optional] [default to null]
-**ContractStartTime** | **int32** |  | [optional] [default to null]
-**ContractEndTime** | **int32** |  | [optional] [default to null]
+**ContractStartTime** | **int64** |  | [optional] [default to null]
+**ContractEndTime** | **int64** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

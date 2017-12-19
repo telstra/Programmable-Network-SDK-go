@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **NsdUuid** | **string** | no longer used | [optional] [default to null]
 **GuidTopologyId** | **string** |  | [optional] [default to null]
 **CreatedBy** | **string** |  | [optional] [default to null]
-**CreationDate** | **int32** |  | [optional] [default to null]
+**CreationDate** | **int64** |  | [optional] [default to null]
 **DeletionDate** | **int32** |  | [optional] [default to null]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

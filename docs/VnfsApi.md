@@ -4,11 +4,11 @@ All URIs are relative to *https://penapi.pacnetconnect.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ListImagesInTheMarketplace**](VnfsApi.md#ListImagesInTheMarketplace) | **Get** /1.0.0/marketplace/image | List images in the Marketplace
+[**100MarketplaceImageGet**](VnfsApi.md#100MarketplaceImageGet) | **Get** /1.0.0/marketplace/image | List images in the Marketplace
 
 
-# **ListImagesInTheMarketplace**
-> Model100MarketplaceImageResponse ListImagesInTheMarketplace()
+# **100MarketplaceImageGet**
+> Model100MarketplaceImageResponse 100MarketplaceImageGet()
 
 List images in the Marketplace
 
@@ -24,7 +24,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 

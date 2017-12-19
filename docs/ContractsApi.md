@@ -4,43 +4,13 @@ All URIs are relative to *https://penapi.pacnetconnect.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateNewContractOnSpecifiedLink**](ContractsApi.md#CreateNewContractOnSpecifiedLink) | **Post** /1.0.0/inventory/links/{linkid}/contract | Create new Contract on specified link
-[**GetActiveContractByContractID**](ContractsApi.md#GetActiveContractByContractID) | **Get** /1.0.0/inventory/links/{linkid}/contract/{contractid} | Get active Contract by ContractID
-[**UpdateActiveContractByContractID**](ContractsApi.md#UpdateActiveContractByContractID) | **Put** /1.0.0/inventory/links/{linkid}/contract/{contractid} | Update active Contract by ContractID
+[**100InventoryLinksContractByLinkidAndContractidGet**](ContractsApi.md#100InventoryLinksContractByLinkidAndContractidGet) | **Get** /1.0.0/inventory/links/{linkid}/contract/{contractid} | Get active Contract by ContractID
+[**100InventoryLinksContractByLinkidAndContractidPut**](ContractsApi.md#100InventoryLinksContractByLinkidAndContractidPut) | **Put** /1.0.0/inventory/links/{linkid}/contract/{contractid} | Update active Contract by ContractID
+[**100InventoryLinksContractByLinkidPost**](ContractsApi.md#100InventoryLinksContractByLinkidPost) | **Post** /1.0.0/inventory/links/{linkid}/contract | Create new Contract on specified link
 
 
-# **CreateNewContractOnSpecifiedLink**
-> Model100InventoryLinksContractResponse36 CreateNewContractOnSpecifiedLink($linkid, $body)
-
-Create new Contract on specified link
-
-Create new Contract on specified link
-
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **linkid** | **string**| Unique identifier representing a specific link | 
- **body** | [**Model100InventoryLinksContractRequest35**](Model100InventoryLinksContractRequest35.md)|  | [optional] 
-
-### Return type
-
-[**Model100InventoryLinksContractResponse36**](100InventoryLinksContractResponse36.md)
-
-### Authorization
-
-[auth](../README.md#auth)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **GetActiveContractByContractID**
-> Model100InventoryLinksContractResponse GetActiveContractByContractID($linkid, $contractid)
+# **100InventoryLinksContractByLinkidAndContractidGet**
+> Model100InventoryLinksContractResponse 100InventoryLinksContractByLinkidAndContractidGet($linkid, $contractid)
 
 Get active Contract by ContractID
 
@@ -60,7 +30,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 
@@ -69,8 +39,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **UpdateActiveContractByContractID**
-> Model100InventoryLinksContractResponse31 UpdateActiveContractByContractID($linkid, $contractid, $body)
+# **100InventoryLinksContractByLinkidAndContractidPut**
+> Model100InventoryLinksContractResponse33 100InventoryLinksContractByLinkidAndContractidPut($linkid, $contractid, $body)
 
 Update active Contract by ContractID
 
@@ -87,11 +57,41 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Model100InventoryLinksContractResponse31**](100InventoryLinksContractResponse31.md)
+[**Model100InventoryLinksContractResponse33**](100InventoryLinksContractResponse33.md)
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **100InventoryLinksContractByLinkidPost**
+> Model100InventoryLinksContractResponse38 100InventoryLinksContractByLinkidPost($linkid, $body)
+
+Create new Contract on specified link
+
+Create new Contract on specified link
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **linkid** | **string**| Unique identifier representing a specific link | 
+ **body** | [**Model100InventoryLinksContractRequest37**](Model100InventoryLinksContractRequest37.md)|  | [optional] 
+
+### Return type
+
+[**Model100InventoryLinksContractResponse38**](100InventoryLinksContractResponse38.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 

@@ -4,12 +4,12 @@ All URIs are relative to *https://penapi.pacnetconnect.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetAccountInformationDetails**](CustomersApi.md#GetAccountInformationDetails) | **Get** /1.0.0/account/{customeruuid} | Get account information details
-[**ListUsers**](CustomersApi.md#ListUsers) | **Get** /1.0.0/account/{customeruuid}/user | List users
+[**100AccountByCustomeruuidGet**](CustomersApi.md#100AccountByCustomeruuidGet) | **Get** /1.0.0/account/{customeruuid} | Get account information details
+[**100AccountUserByCustomeruuidGet**](CustomersApi.md#100AccountUserByCustomeruuidGet) | **Get** /1.0.0/account/{customeruuid}/user | List users
 
 
-# **GetAccountInformationDetails**
-> Model100AccountResponse GetAccountInformationDetails($customeruuid)
+# **100AccountByCustomeruuidGet**
+> Model100AccountResponse 100AccountByCustomeruuidGet($customeruuid)
 
 Get account information details
 
@@ -28,7 +28,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 
@@ -37,8 +37,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **ListUsers**
-> []User ListUsers($customeruuid)
+# **100AccountUserByCustomeruuidGet**
+> []User 100AccountUserByCustomeruuidGet($customeruuid)
 
 List users
 
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 

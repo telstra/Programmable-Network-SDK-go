@@ -4,12 +4,12 @@ All URIs are relative to *https://penapi.pacnetconnect.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreateAnAuthenticationToken**](AuthenticationApi.md#CreateAnAuthenticationToken) | **Post** /1.0.0/auth/generatetoken | Create an authentication token
-[**ValidateAuthenticationToken**](AuthenticationApi.md#ValidateAuthenticationToken) | **Get** /1.0.0/auth/validatetoken | Validate authentication token
+[**100AuthGeneratetokenPost**](AuthenticationApi.md#100AuthGeneratetokenPost) | **Post** /1.0.0/auth/generatetoken | Create an authentication token
+[**100AuthValidatetokenGet**](AuthenticationApi.md#100AuthValidatetokenGet) | **Get** /1.0.0/auth/validatetoken | Validate authentication token
 
 
-# **CreateAnAuthenticationToken**
-> Model100AuthGeneratetokenResponse CreateAnAuthenticationToken($grantType, $username, $password)
+# **100AuthGeneratetokenPost**
+> Model100AuthGeneratetokenResponse 100AuthGeneratetokenPost($grantType, $username, $password)
 
 Create an authentication token
 
@@ -30,7 +30,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 
@@ -39,8 +39,8 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **ValidateAuthenticationToken**
-> Model100AuthValidatetokenResponse ValidateAuthenticationToken()
+# **100AuthValidatetokenGet**
+> Model100AuthValidatetokenResponse 100AuthValidatetokenGet()
 
 Validate authentication token
 
@@ -56,7 +56,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[auth](../README.md#auth)
+No authorization required
 
 ### HTTP request headers
 
