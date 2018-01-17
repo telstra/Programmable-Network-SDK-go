@@ -4,27 +4,25 @@ All URIs are relative to *https://penapi.pacnetconnect.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**100InventoryDatacentersGet**](DatacentresApi.md#100InventoryDatacentersGet) | **Get** /1.0.0/inventory/datacenters | Get list of all the data centers
+[**InventoryDatacentersGet**](DatacentresApi.md#InventoryDatacentersGet) | **Get** /1.0.0/inventory/datacenters | Get list of all the data centers
 
 
-# **100InventoryDatacentersGet**
-> []Model100InventoryDatacentersResponse 100InventoryDatacentersGet()
-
+# **InventoryDatacentersGet**
+> []InventoryDatacentersResponse InventoryDatacentersGet(ctx, )
 Get list of all the data centers
 
 Get list of all the data centers
 
-
-### Parameters
+### Required Parameters
 This endpoint does not need any parameter.
 
 ### Return type
 
-[**[]Model100InventoryDatacentersResponse**](100InventoryDatacentersResponse.md)
+[**[]InventoryDatacentersResponse**](InventoryDatacentersResponse.md)
 
 ### Authorization
 
-No authorization required
+[auth](../README.md#auth)
 
 ### HTTP request headers
 

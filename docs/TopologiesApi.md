@@ -13,22 +13,21 @@ Method | HTTP request | Description
 
 
 # **Ttms100TopologyTagByTopotaguuidDelete**
-> Ttms100TopologyTagByTopotaguuidDelete($topotaguuid)
-
+> Ttms100TopologyTagByTopotaguuidDelete(ctx, topotaguuid)
 Delete a topology tag
 
 Delete a topology tag
 
-
-### Parameters
+### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **topotaguuid** | **string**| Unique identifier representing a specific topology tag | 
+ **ctx** | **context.Context** | context for logging, tracing, authentication, etc.
+  **topotaguuid** | **string**| Unique identifier representing a specific topology tag | 
 
 ### Return type
 
-void (empty response body)
+ (empty response body)
 
 ### Authorization
 
@@ -42,18 +41,17 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **Ttms100TopologyTagByTopotaguuidGet**
-> Topology Ttms100TopologyTagByTopotaguuidGet($topotaguuid)
-
+> Topology Ttms100TopologyTagByTopotaguuidGet(ctx, topotaguuid)
 Get information about the specified topology tag
 
 Get information about the specified topology tag
 
-
-### Parameters
+### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **topotaguuid** | **string**| Unique identifier representing a specific topology tag | 
+ **ctx** | **context.Context** | context for logging, tracing, authentication, etc.
+  **topotaguuid** | **string**| Unique identifier representing a specific topology tag | 
 
 ### Return type
 
@@ -71,19 +69,26 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **Ttms100TopologyTagByTopotaguuidPut**
-> Topology Ttms100TopologyTagByTopotaguuidPut($topotaguuid, $body)
-
+> Topology Ttms100TopologyTagByTopotaguuidPut(ctx, topotaguuid, optional)
 Update a topology tag's name and/or description
 
 Update a topology tag's name and/or description
 
+### Required Parameters
 
-### Parameters
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **ctx** | **context.Context** | context for logging, tracing, authentication, etc.
+  **topotaguuid** | **string**| Unique identifier representing a specific topology tag | 
+ **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a map[string]interface{}.
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **topotaguuid** | **string**| Unique identifier representing a specific topology tag | 
- **body** | [**Ttms100TopologyTagRequest**](Ttms100TopologyTagRequest.md)|  | [optional] 
+ **body** | [**Ttms100TopologyTagRequest**](Ttms100TopologyTagRequest.md)|  | 
 
 ### Return type
 
@@ -101,14 +106,12 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **Ttms100TopologyTagGet**
-> []Topology Ttms100TopologyTagGet()
-
+> []Topology Ttms100TopologyTagGet(ctx, )
 List all topology tags
 
 List all topology tags
 
-
-### Parameters
+### Required Parameters
 This endpoint does not need any parameter.
 
 ### Return type
@@ -127,18 +130,17 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **Ttms100TopologyTagObjectsByTopotaguuidGet**
-> Ttms100TopologyTagObjectsResponse Ttms100TopologyTagObjectsByTopotaguuidGet($topotaguuid)
-
+> Ttms100TopologyTagObjectsResponse Ttms100TopologyTagObjectsByTopotaguuidGet(ctx, topotaguuid)
 List objects for Topology
 
 List all objects (Endpoints, Links, VPorts, etc.) associated with the topology tag.
 
-
-### Parameters
+### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **topotaguuid** | **string**| Unique identifier representing a specific topology tag | 
+ **ctx** | **context.Context** | context for logging, tracing, authentication, etc.
+  **topotaguuid** | **string**| Unique identifier representing a specific topology tag | 
 
 ### Return type
 
@@ -156,18 +158,24 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **Ttms100TopologyTagPost**
-> Topology Ttms100TopologyTagPost($body)
-
+> Topology Ttms100TopologyTagPost(ctx, optional)
 Create a named topology tag
 
 Create a named topology tag
 
-
-### Parameters
+### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**Ttms100TopologyTagRequest**](Ttms100TopologyTagRequest.md)|  | [optional] 
+ **ctx** | **context.Context** | context for logging, tracing, authentication, etc.
+ **optional** | **map[string]interface{}** | optional parameters | nil if no parameters
+
+### Optional Parameters
+Optional parameters are passed through a map[string]interface{}.
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**Ttms100TopologyTagRequest**](Ttms100TopologyTagRequest.md)|  | 
 
 ### Return type
 

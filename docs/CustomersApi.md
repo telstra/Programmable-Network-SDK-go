@@ -4,31 +4,30 @@ All URIs are relative to *https://penapi.pacnetconnect.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**100AccountByCustomeruuidGet**](CustomersApi.md#100AccountByCustomeruuidGet) | **Get** /1.0.0/account/{customeruuid} | Get account information details
-[**100AccountUserByCustomeruuidGet**](CustomersApi.md#100AccountUserByCustomeruuidGet) | **Get** /1.0.0/account/{customeruuid}/user | List users
+[**AccountByCustomeruuidGet**](CustomersApi.md#AccountByCustomeruuidGet) | **Get** /1.0.0/account/{customeruuid} | Get account information details
+[**AccountUserByCustomeruuidGet**](CustomersApi.md#AccountUserByCustomeruuidGet) | **Get** /1.0.0/account/{customeruuid}/user | List users
 
 
-# **100AccountByCustomeruuidGet**
-> Model100AccountResponse 100AccountByCustomeruuidGet($customeruuid)
-
+# **AccountByCustomeruuidGet**
+> []AccountResponse AccountByCustomeruuidGet(ctx, customeruuid)
 Get account information details
 
 Get the account information for the specified customer
 
-
-### Parameters
+### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customeruuid** | **string**| Unique identifier representing a specific customer | 
+ **ctx** | **context.Context** | context for logging, tracing, authentication, etc.
+  **customeruuid** | **string**| Unique identifier representing a specific customer | 
 
 ### Return type
 
-[**Model100AccountResponse**](100AccountResponse.md)
+[**[]AccountResponse**](AccountResponse.md)
 
 ### Authorization
 
-No authorization required
+[auth](../README.md#auth)
 
 ### HTTP request headers
 
@@ -37,19 +36,18 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **100AccountUserByCustomeruuidGet**
-> []User 100AccountUserByCustomeruuidGet($customeruuid)
-
+# **AccountUserByCustomeruuidGet**
+> []User AccountUserByCustomeruuidGet(ctx, customeruuid)
 List users
 
 List all users associated with the specified customer
 
-
-### Parameters
+### Required Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **customeruuid** | **string**| Unique identifier representing a specific customer | 
+ **ctx** | **context.Context** | context for logging, tracing, authentication, etc.
+  **customeruuid** | **string**| Unique identifier representing a specific customer | 
 
 ### Return type
 
@@ -57,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[auth](../README.md#auth)
 
 ### HTTP request headers
 
